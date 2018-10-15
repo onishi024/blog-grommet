@@ -35,6 +35,7 @@
     "grommet": "next",
     "grommet-icons": "next",
     "lodash": "^4.17.5",
+    "netlify-cms": "^2.1.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
