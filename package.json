@@ -1,0 +1,65 @@
+{
+  "name": "gatsby-starter-blog-grommet",
+  "description": "Starter Gatsby Blog wish Grommet v2",
+  "homepage": "https://github.com/ganevru/gatsby-starter-blog-grommet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganevru/gatsby-starter-blog-grommet.git"
+  },
+  "version": "1.0.0",
+  "author": "Ivan Ganev <iganevru@gmail.com>",
+  "keywords": [
+    "gatsby",
+    "grommet"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
+    "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.0",
+    "gatsby-plugin-feed": "^2.0.0",
+    "gatsby-plugin-google-analytics": "^2.0.0",
+    "gatsby-plugin-manifest": "^2.0.0",
+    "gatsby-plugin-offline": "^2.0.0",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.0",
+    "gatsby-plugin-styled-components": "^3.0.0",
+    "gatsby-remark-copy-linked-files": "^2.0.0",
+    "gatsby-remark-images": "^2.0.0",
+    "gatsby-remark-responsive-iframe": "^2.0.0",
+    "gatsby-remark-smartypants": "^2.0.0",
+    "gatsby-source-filesystem": "^2.0.0",
+    "gatsby-transformer-remark": "^2.0.0",
+    "gatsby-transformer-sharp": "^2.0.0",
+    "grommet": "next",
+    "grommet-icons": "next",
+    "lodash": "^4.17.5",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-jsx": "^6.0.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "0.3.0",
+    "gh-pages": "^1.1.0"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "develop": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+  }
+}
